@@ -2,11 +2,14 @@ package com.example.demo.controller;
 
 import com.example.demo.model.User;
 import com.example.demo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
 
@@ -15,6 +18,7 @@ public class AuthorizationController {
 
     private UserService userService;
 
+    @Autowired
     public AuthorizationController(UserService userService) {
         this.userService = userService;
     }
@@ -45,12 +49,9 @@ public class AuthorizationController {
                     "Sign up successful!");
             model.addAttribute("user", new User());
         }
-
         return "registration";
     }
-    @GetMapping(value="/login")
-    public String login(){
-        return "login";
-    }
+    @RequestMapping(value="/login", method= RequestMethod.GET)
+    public String login(){return "login";}
 
 }

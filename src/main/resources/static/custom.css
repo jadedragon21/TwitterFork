@@ -1,0 +1,84 @@
+body{
+	background-color: #595a5e;
+}
+
+h2{
+text-align: center;
+font-family: Segoe Script;
+color: #4774e6;
+}
+h1{
+text-align: center;
+font-family: Segoe Script;
+color: #4774e6;
+}
+
+container{
+
+font-family: Segoe Script;
+color: #4774e6;
+
+}
+button.btn:nth-child(6){
+font-family: Segoe Script;
+color: #4774e6;
+}
+button.btn:nth-child(2){
+font-family: Segoe Script;
+color: #4774e6;
+
+}
+.nav > li:nth-child(1) > a:nth-child(1){
+font-family: Segoe Script;
+color: #4774e6;
+
+}
+.navbar-brand{
+font-family: Segoe Script;
+color: #4774e6;
+}
+#username{
+font-family: Segoe Script;
+}
+#password{
+font-family: Segoe Script;
+}
+button.btn{
+background-color: #0a0a0a;
+}
+.d-print-none{
+}
+h5{
+align: right;
+}
+
+.card-body{
+text-align: center;
+font-family: Segoe Script;
+color: #4774e6;
+}
+.jumbotron{
+color: #4774e6;
+background-color: #0a0a0a;
+float: none;
+padding-left: 100px;
+padding-right: 100px;
+padding-top: 100px;
+padding-bottom: 100px;
+margin-left: 440px;
+margin-right:470px;
+margin-top: 25px;
+margin-bottom: 25px;
+border-radius: 6px;
+border-left-width: 10px;
+border-left-style: solid;
+border-right-width: 10px;
+border-right-style: solid;
+border-top-width: 10px;
+border-top-style: solid;
+border-bottom-width: 10px;
+border-bottom-style: solid;
+
+}
+
+
