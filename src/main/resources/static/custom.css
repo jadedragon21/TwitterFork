@@ -4,13 +4,14 @@ body{
 
 h2{
 text-align: center;
+background-color: #0a0a0a;
 font-family: Segoe Script;
 color: #4774e6;
 }
 h1{
 text-align: center;
 font-family: Segoe Script;
-color: #4774e6;
+color: #0a0a0a;
 }
 
 container{
@@ -43,9 +44,7 @@ font-family: Segoe Script;
 #password{
 font-family: Segoe Script;
 }
-button.btn{
-background-color: #0a0a0a;
-}
+
 .d-print-none{
 }
 h5{
@@ -80,5 +79,16 @@ border-bottom-width: 10px;
 border-bottom-style: solid;
 
 }
+.btn{
+font-family: Segoe Script;
+color: #4774e6;
+background-color: #0a0a0a;
+font-size:25px
+}
+.container > div:nth-child(1) > div:nth-child(3) > div:nth-child(1){
+font-family: Segoe Script;
+color: #0a0a0a;
+font-size:30px;
+text-align: center;
 
-
+}
