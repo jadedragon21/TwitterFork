@@ -10,7 +10,13 @@
 
 <div class="container">
     <div th:replace="fragments/navbar :: navbar"></div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center">
     <div class="jumbotron col-md-8 col-md-offset-2">
+        <img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50" alt="llama".mx-auto="">
+        <img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50" alt="llama".mx-auto="">
+        <img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50" alt="llama".mx-auto="">
+        <img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50" alt="llama".mx-auto="">
         <h2>New Tweet</h2><br/>
         <form th:action="@{/tweets}" th:object="${tweet}" method="post" autocomplete="off">
             <div class="form-group">
@@ -20,6 +26,10 @@
             <div class="form-group">
                 <button class="btn btn-md btn-dark btn-block" name="Submit" value="Submit" type="Submit">Tweet it!</button>
             </div>
+            <img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50" alt="llama".mx-auto="">
+            <img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50" alt="llama".mx-auto="">
+            <img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50" alt="llama".mx-auto="">
+            <img src="https://i.pinimg.com/originals/8b/5e/1b/8b5e1bd9084165e039753cf4a12c9006.gif" width="50" alt="llama".mx-auto="">
         </form>
         <div th:if="${successMessage}">
             <h3><span class="text-success" th:utext="${successMessage}"></span></h3>

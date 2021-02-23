@@ -27,10 +27,12 @@
         <button class="btn btn-md btn-dark btn-block" name="Submit" value="Login" type="Submit">Log in</button>
 
     </form>
-    <form th:action="@{/signup}" method="get"><br/>
+<!--    changed this on 2/23/21 from get to post-->
+    <form th:action="@{/signup}" method="post"><br/>
         <button class="btn btn-md btn-dark btn-block" name="Submit" value="Submit" type="Submit">Sign up</button>
     </form>
 
 </div>
+
 </body>
 </html>

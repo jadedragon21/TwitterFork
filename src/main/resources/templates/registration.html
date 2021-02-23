@@ -7,7 +7,7 @@
 </head>
 
 
-<body>
+ <body>
 
     <div class="container">
     <div th:replace="fragments/navbar :: navbar"></div>
@@ -43,11 +43,16 @@
         <!--            <a href="/login" class="btn btn-md btn-primary btn-block">Login</a>-->
         <!--        </div>-->
     </form>
-    <div th:if="${success}">
-        <div th:text="${success}"></div>
-        <form th:action="@{~/login}" method="get">
+     <div th:if="${success}">
+        <div th:text="${success}">
+         </div>
+          <form th:action="@{~/login}" method="get">
             <button class="btn btn-md btn-dark btn-block m-5" type="submit">Log In</button>
-        </form>
+         </form>
+     </div>
+
     </div>
-</body>
+
+ </body>
+
 </html>

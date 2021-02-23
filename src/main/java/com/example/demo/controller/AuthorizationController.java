@@ -16,9 +16,10 @@ import javax.validation.Valid;
 @Controller
 public class AuthorizationController {
 
+    @Autowired
     private UserService userService;
 
-    @Autowired
+
     public AuthorizationController(UserService userService) {
         this.userService = userService;
     }
@@ -51,7 +52,8 @@ public class AuthorizationController {
         }
         return "registration";
     }
-    @RequestMapping(value="/login", method= RequestMethod.GET)
-    public String login(){return "login";}
-
+    @GetMapping(value="/login")
+    public String login(){
+        return "login";
+    }
 }

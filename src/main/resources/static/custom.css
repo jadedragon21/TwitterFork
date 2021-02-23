@@ -49,6 +49,8 @@ font-family: Segoe Script;
 }
 h5{
 align: right;
+font-family: Segoe Script;
+color: #00aced;
 }
 
 .card-body{
@@ -92,3 +94,32 @@ font-size:30px;
 text-align: center;
 
 }
+ul.nav:nth-child(1) > li:nth-child(2) > a:nth-child(1){
+font-family: Segoe Script;
+color: #00aced;
+font-size:15px;
+text-align: center;
+}
+p{
+font-family: Segoe Script;
+color: #b6ccd6;
+text-align: center;
+}
+
+
+
+body.home .mini-card-grid {
+    scrollbar-color: #666 #201c29;
+    scrollbar-gutter: always;
+    padding: 3rem 0 3rem 2rem;
+    margin: 0;
+    display: flex;
+    overflow-x: scroll;
+    }
+
+    .mini-card-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        position: relative;
+        }
