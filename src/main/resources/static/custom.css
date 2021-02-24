@@ -48,16 +48,18 @@ font-family: Segoe Script;
 .d-print-none{
 }
 h5{
-align: right;
+
 font-family: Segoe Script;
 color: #00aced;
 }
 
 .card-body{
-text-align: center;
+text-align: left;
 font-family: Segoe Script;
 color: #4774e6;
 }
+
+
 .jumbotron{
 color: #4774e6;
 background-color: #0a0a0a;
@@ -103,7 +105,7 @@ text-align: center;
 p{
 font-family: Segoe Script;
 color: #b6ccd6;
-text-align: center;
+
 }
 
 
@@ -122,4 +124,5 @@ body.home .mini-card-grid {
         gap: 1rem;
         grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
         position: relative;
-        }
+    }
+

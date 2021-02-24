@@ -6,43 +6,14 @@
 
 </head>
 
-<body>
+ <body>
 
-<div class="container" style="color: #00aced">
+   <div class="container" style="color: #00aced">
     <div th:replace="fragments/navbar :: navbar"></div>
-
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center">
-        <div class="jumbotron col-md-8 col-md-offset-2" style="text-align:center;">
-             <i class="fab fa-twitter"></i>Tweets<i class="fab fa-twitter"></i>
-<!--            <div class="mini-card-grid">-->
-<!--                <div th:each="tweet:${tweetList}">-->
-<!--                    <h5>@<span th:text="${tweet.user.username}"></span>-->
-<!--                        <small><span th:text="${#dates.format(tweet.createdAt, 'M/d/yy')}"></span></small>-->
-<!--                    </h5>-->
-<!--                    <p th:utext="${tweet.message}"></p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--//outerhtml-->
-<div class="mini-card-grid">
-<h3 class="mini-card-title"></h3>
-
-    <div th:each="tweet:${tweetList}">
-        <h5>@<span th:text="${tweet.user.username}"></span>
-            <small><span th:text="${#dates.format(tweet.createdAt, 'M/d/yy')}"></span></small>
-        </h5>
-        <p th:utext="${tweet.message}"></p>
-    </div>
-</div>
-<div class="tags">
-    <a href="https://css-tricks.com/tag/atomic/" rel="tag">jade's css dreams</a> </div>
-            <img class="spinner-grow"  src="resources/static/images/Sheep.png"  width="50" th:src="@{images/Sheep.png}"/>
-        </div>
-    </div>
-</div>
-</body>
+    <div th:replace="fragments/card :: body-card"></div>
+       <div th:replace="fragments/jumbotroncss :: body-jumbo"></div>
+       <div th:insert="fragments/footer :: footer"></div>
+ </body>
 </html>
 
 
